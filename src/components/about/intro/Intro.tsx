@@ -1,5 +1,7 @@
 import React from 'react';
 import { IntroProps } from './IntroTypes';
+import ProfileImage from '../../../assets/about/ProfileImage.jpg';
+
 
 const Intro: React.FC<IntroProps> = ({ services }) => {
   return (
@@ -10,7 +12,7 @@ const Intro: React.FC<IntroProps> = ({ services }) => {
             <div className="relative w-80 h-80 mx-auto">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#e6002e]/20 to-transparent animate-pulse"></div>
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=320&h=320&fit=crop&crop=face"
+                src={ProfileImage}
                 alt="Founder"
                 className="w-full h-full object-cover rounded-full shadow-[0_0_50px_rgba(230,0,46,0.3)] hover:shadow-[0_0_70px_rgba(230,0,46,0.5)] transition-all duration-500 hover:scale-105 cursor-pointer"
               />
