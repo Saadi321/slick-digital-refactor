@@ -5,7 +5,6 @@ import Service from '@/components/service/Service';
 import CaseStudy from '@/components/caseStudy/CaseStudy';
 import Testimonial from '@/components/common/testimonial/Testimonial';
 import Gallery from '@/components/gallery/Gallery';
-import Contact from '@/components/contact/Contact';
 import CallToAction from '@/components/common/callToAction/CallToAction';
 
 import { services } from '@/components/service/ServiceData';
@@ -34,7 +33,6 @@ const Home: React.FC = () => {
         setActiveTestimonial={setActiveTestimonial}
       />
       <Gallery galleryItems={galleryItems} />
-      <Contact />
       <CallToAction />
     </div>
   );
