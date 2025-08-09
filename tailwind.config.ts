@@ -61,6 +61,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom Slick Digital colors
+				'slick-black': 'hsl(var(--slick-black))',
+				'slick-red': 'hsl(var(--slick-red))',
+				'slick-white': 'hsl(var(--slick-white))',
+				'slick-gray': {
+					300: 'hsl(var(--slick-gray-300))',
+					400: 'hsl(var(--slick-gray-400))',
+					500: 'hsl(var(--slick-gray-500))',
+					700: 'hsl(var(--slick-gray-700))',
+					800: 'hsl(var(--slick-gray-800))',
+					900: 'hsl(var(--slick-gray-900))'
 				}
 			},
 			borderRadius: {
