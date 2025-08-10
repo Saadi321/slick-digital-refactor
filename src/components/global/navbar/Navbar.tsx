@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, isMobileMenuOpen, setIsMobi
         <a href="/" className="flex items-center space-x-3">
           <SlickLogo width={40} height={35} className="text-brand" />
           <div className="text-2xl font-bold">
-            Slick<span className="text-brand">Digital</span>
+            Slick<span className="text-brand">Digital</span> Agency
           </div>
         </a>
         
