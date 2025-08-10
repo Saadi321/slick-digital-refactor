@@ -41,16 +41,7 @@ const Team: React.FC<TeamProps> = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-white mb-2">Key Achievements:</div>
-                  <ul className="text-xs text-gray-400 space-y-1">
-                    {member.achievements.map((achievement, achIndex) => (
-                      <li key={achIndex} className="flex items-center">
-                        <i className="fas fa-check text-[#e6002e] mr-2"></i>
-                        {achievement}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  
               </CardContent>
             </Card>
           ))}
