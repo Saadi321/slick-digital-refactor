@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SplashCursor from '@/components/common/splashCursor/SplashCursor';
 
 import Navbar from '@/components/global/navbar/Navbar';
 import Footer from '@/components/global/footer/Footer';
@@ -29,6 +30,7 @@ const App: React.FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <SplashCursor />
         <Toaster />
         <Sonner />
         <BrowserRouter>

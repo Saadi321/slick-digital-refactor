@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { NavbarProps } from './NavbarTypes';
 import { navItems } from './NavbarData';
+import SlickLogo from '@/components/common/logo/SlickLogo';
 
 const Navbar: React.FC<NavbarProps> = ({ isScrolled, isMobileMenuOpen, setIsMobileMenuOpen }) => {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
@@ -40,9 +41,12 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled, isMobileMenuOpen, setIsMobi
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'backdrop-blur-md bg-black/90' : 'bg-black/70'}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="text-2xl font-bold">
-          Slick<span className="text-[#e6002e]">Digital</span>
-        </div>
+        <a href="/" className="flex items-center space-x-3">
+          <SlickLogo width={40} height={35} className="text-brand" />
+          <div className="text-2xl font-bold">
+            Slick<span className="text-brand">Digital</span>
+          </div>
+        </a>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center">

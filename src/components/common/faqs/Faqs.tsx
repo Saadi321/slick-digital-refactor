@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import { FAQ } from '../../contact/faqs/FaqsTypes';
 
 interface FaqsProps {
@@ -30,7 +31,11 @@ const Faqs = ({ faqs, title = "FAQ", subtitle = "Frequently asked questions" }: 
                 onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
               >
                 <span className="font-semibold text-foreground pr-4">{faq.question}</span>
-                <i className={`fas fa-chevron-${expandedFaq === index ? 'up' : 'down'} text-brand transition-transform flex-shrink-0`}></i>
+                {expandedFaq === index ? (
+                  <ChevronUp className="w-5 h-5 text-brand transition-transform flex-shrink-0" />
+                ) : (
+                  <ChevronDown className="w-5 h-5 text-brand transition-transform flex-shrink-0" />
+                )}
               </button>
               {expandedFaq === index && (
                 <div className="px-6 pb-6">

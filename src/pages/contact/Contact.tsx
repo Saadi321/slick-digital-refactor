@@ -1,3 +1,4 @@
+import { AlertTriangle } from 'lucide-react';
 import ContactHero from '@/components/contact/hero/ContactHero';
 import ContactMethod from '@/components/contact/contactMethod/ContactMethod';
 import ContactForm from '@/components/contact/contactForm/ContactForm';
@@ -39,7 +40,7 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-b from-brand/10 to-surface-primary/50 p-12 rounded-2xl border border-brand/30">
             <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r from-brand/20 to-transparent flex items-center justify-center">
-              <i className="fas fa-exclamation-triangle text-3xl text-brand"></i>
+              <AlertTriangle className="w-8 h-8 text-brand" />
             </div>
             <h2 className="text-3xl font-bold mb-4">Emergency Support</h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
