@@ -10,7 +10,7 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="flex items-center justify-center space-x-3 mb-4">
           <SlickLogo width={40} height={35} className="text-brand" />
           <div className="text-2xl font-bold">
-            Slick<span className="text-brand">Digital</span>
+            Slick<span className="text-brand">Digital</span> Agency
           </div>
         </div>
         <p className="text-gray-400 mb-6">
