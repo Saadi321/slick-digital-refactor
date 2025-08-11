@@ -4,7 +4,6 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SplashCursor from '@/components/common/splashCursor/SplashCursor';
 
 import Navbar from '@/components/global/navbar/Navbar';
 import Footer from '@/components/global/footer/Footer';
@@ -12,6 +11,7 @@ import Home from '@/pages/home/Home';
 import About from '@/pages/about/About';
 import NotFound from "./pages/NotFound";
 import Contact from './pages/contact/Contact';
+import Services from './pages/services/Services';
 
 const queryClient = new QueryClient();
 
@@ -30,7 +30,6 @@ const App: React.FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <SplashCursor />
         <Toaster />
         <Sonner />
         <BrowserRouter>
@@ -41,6 +40,7 @@ const App: React.FC = () => {
           />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
