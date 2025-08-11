@@ -7,6 +7,8 @@ import ServiceHero from '@/components/service/hero/ServiceHero';
 import Service from '@/components/service/Service';
 import { services } from '@/components/service/ServiceData';
 import { testimonialData } from '@/components/common/testimonial/TestimonialData';
+import { mainservicesFaqData } from '@/components/service/faqsData/ServiceFaqsData';
+import Faqs from '@/components/common/faqs/Faqs';
 
 const Services = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -18,7 +20,7 @@ const Services = () => {
       <Service services={services} />
       <Benifits />
       
-      
+       <Faqs faqs={mainservicesFaqData} />
       
     <Testimonial testimonials={testimonialData} />
      
