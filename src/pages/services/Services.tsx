@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import CallToAction from '@/components/common/callToAction/CallToAction';
 import Testimonial from '@/components/common/testimonial/Testimonial';
-import { testimonials } from '@/components/common/testimonial/TestimonialData';
 import Benifits from '@/components/service/benifits/Benifits';
 import Features from '@/components/service/features/Features';
 import ServiceHero from '@/components/service/hero/ServiceHero';
 import Service from '@/components/service/Service';
 import { services } from '@/components/service/ServiceData';
+import { testimonialData } from '@/components/common/testimonial/TestimonialData';
 
 const Services = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -20,11 +20,7 @@ const Services = () => {
       
       
       
-      <Testimonial 
-        testimonials={testimonials}
-        activeTestimonial={activeTestimonial}
-        setActiveTestimonial={setActiveTestimonial}
-      /> 
+    <Testimonial testimonials={testimonialData} />
      
       
       <CallToAction />
